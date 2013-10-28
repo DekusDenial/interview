@@ -1,0 +1,16 @@
+{
+	"framework": "jasmine",
+	"launch_in_dev": [
+		"chrome"
+	],
+	"src_files": [
+		"src/*.js",
+		"specs/*.js"
+	],
+	"serve_files": [
+		"src/*.js",
+		"specs/*.js"
+	],
+	"test_page" : "test.mustache",
+	"port" : 8888
+}

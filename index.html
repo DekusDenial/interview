@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Shower Presentation Engine</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<link rel="stylesheet" href="css/screen.css">
+	<link rel="stylesheet" href="css/tomorrow.css">
+	<style>
+	.slide ol, .slide ul {
+		margin-bottom: 1em;
+	}
+	.slide > div {
+		padding: 1em 2em;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+	}
+	.slide h2 {
+		margin-bottom: 0.5em;
+	}
+	.slide pre {
+		margin-bottom: 1em;
+	}
+	.slide pre code {
+		line-height: 1;
+		white-space: pre-wrap;
+	}
+	.small {
+		font-size: 18px;
+	}
+	.big {
+		font-size: 34px;
+		margin-left: 1.25em !important;
+	}
+	.big li {
+		line-height: 1.3;
+		padding: 5px 0;
+	}
+	.w50 {
+		width: 50%;
+	}
+	.f-left {
+		float: left;
+		display: inline-block;
+	}
+  .underline {
+    text-decoration: underline;
+  }
+  sub {
+    font-size: 20px;
+    position: relative;
+
+  }
+	</style>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>Slides For Interviews</h1>
+		<p><span>Dekus</span></p>
+	</header>
+  <section class="slide"><div>
+    <h2>Front End:</h2>
+    <ol class="big">
+      <li class="next">What happen between the moment after you enter a URL in the address bar and the moment the page is finished rendering?</li>
+      <li class="next">How would you optimize a page that's full of images?</li>
+      <li class="next">What are some choices for client side storage?</li>
+      <li class="next">What are major differences between cookie and web storage?</li>
+      <li class="next">What are <b>Progress Enhancement</b> and <b>Graceful Degradation</b>?</li>
+    </ol>
+  </div></section>
+	<section class="slide"><div>
+    <h2>JavaScript:</h2>
+		<ol class="big">
+			<li class="next">Explain <b>Prototype</b> in JavaScript. How does it work?</li>
+			<li class="next">Explain <b>Closure</b> in Javascript. What are some <span class="underline">Cons</span> about <b>Closure</b>?</li>
+      <li class="next">Explain <b>Ajax</b>.</li>
+      <li class="next">Explain <b>Garbage Collection</b> in JavaScript.</li>
+      <li class="next">What do you, as a Front End developer, care about <b>Memory Management</b> and <b>Performance Optimization</b>?</li>
+		</ol>
+	</div></section>
+  <section class="slide"><div>
+    <h2>DOM:</h2>
+    <ol class="big">
+      <li class="next">What are <b>Event Bubbling</b>, <b>Capturing</b> and <b>Delegation</b>?</li>
+      <li class="next">What are <b>Reflow</b> and <b>Repaint</b> in a browser?</li>
+      <li class="next">Let's say I'm on resolute.com, can I make a GET request to https://google.com via Ajax? e.g. <code class="javascript">xhr.open('GET', 'https://www.google.com');</code></li>
+      <li class="next">How do you get around <b>Same-Origin Policy</b>?</li>
+      <li class="next">Explain how <b>JSONP</b> works.</li>
+    </ol>
+  </div></section>
+	<section class="slide"><div>
+		<h1 style="font-size: 4em;text-align: center;margin-top: 18%;">Coding Exercises</h1>
+	</div></section>
+  <section class="slide"><div>
+    <h2>CSS:</h2>
+    <ol class="big">
+      <li class="next">Go to <a href="http://codepen.io/DekusDenial/pen/uJbcf" target="_blank">http://codepen.io/DekusDenial/pen/uJbcf</a></li>
+      <li class="next">Go to <a href="http://codepen.io/DekusDenial/pen/DcmnI" target="_blank">http://codepen.io/DekusDenial/pen/DcmnI</a><br/><br/><img src="img/box-model-test.jpg"></li>
+    </ol>
+  </div></section>
+	<section class="slide"><div>
+		<h2>JavaScript:<br/><span class="small">!! You will need to switch over to Sublime Text to continue coding !!</span></h2>
+		<ol class="big">
+      <li class="next">*Implement <code class="javascript">Array.prototype.forEach</code>. The callback is invoked with <code class="javascript">(element, index, array)</code>.</li>
+      <li class="next">What is the main difference between <code class="javascript">Array.prototype.forEach</code> and regular <b>For-loop</b> over the array?</li>
+      <li class="next">*Special CamelCase. e.g.
+        <pre class="small" style="text-indent: 0;"><code class="javascript">"total-count".specialCamelCase(); // "totalCount"
+"list-item_count".specialCamelCase(); // "listItemCCount"
+"what_is-going-on_here".specialCamelCase(); // "whatIsGGoingOOOnHHHHere"</code></pre>
+      </li>
+    </ol>
+	</div></section>
+  <section class="slide"><div>
+    <h2>Computer Science:<br/><span class="small">!! You will need to switch over to Sublime Text to continue coding !!</span></h2>
+    <ol class="big">
+      <li class="next">Implement Fibonacci Numbers, <code class="javascript">fib(n)</code> in JavaScript.
+        <ul class="big">
+          <li class="next">e.g. 1, 1, 2, 3, 5, 8, 13, 21, ..., <code class="javascript">fib(7); // return 13</code></li>
+          <li class="next">Make it recursive if it wasn't.</li>
+          <li class="next">Can you further optimize the recursion.</li>
+        </ul>
+      </li>
+      <li class="next">OR
+        <ul>
+          <li class="next">Binary Search Tree with:</li>
+          <li class="next"><code class="javascript">insert()</code>: insert a new node</li>
+          <li class="next"><code class="javascript">traverse()</code>: return the path from the root node to the found node</li>
+        </ul>
+      </li>
+    </ol>
+  </div></section>
+	<section class="slide"><div>
+		<h1 style="font-size: 4em;text-align: center;margin-top: 18%;">Thank You<li class="small next">for being tortured.</li></h1>
+	</div></section>
+	<div class="progress"><div></div></div>
+	<script src="js/shower.min.js"></script>
+	<script src="js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<!-- Copyright © 2010–2013 Vadim Makeev — pepelsbey.net -->
+	<!-- Photos by John Carey — fiftyfootshadows.net -->
+</body>
+</html>
