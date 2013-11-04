@@ -5,11 +5,11 @@
 	],
 	"src_files": [
 		"src/*.js",
-		"specs/*.js"
+		"specs/*Spec.js"
 	],
 	"serve_files": [
 		"src/*.js",
-		"specs/*.js"
+		"specs/*Spec.js"
 	],
 	"test_page" : "test.mustache",
 	"port" : 8888

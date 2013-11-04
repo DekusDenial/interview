@@ -1,3 +1,5 @@
+
+
 describe('Special Camel Case', function() {
 
   document.getElementById('specialCamelCase').innerHTML = String.prototype.specialCamelCase ? String.prototype.specialCamelCase.toString() : 'undefined';
@@ -24,4 +26,10 @@ describe('Special Camel Case', function() {
     expect("what_is-going-on_here".specialCamelCase()).toBe("whatIsGGoingOOOnHHHHere");
   });
 
+  it('should do the advanced featured with "*"', function () {
+    expect("_xml_http_request".specialCamelCase()).toBe("XmlHHttpRRRequest");
+    expect("_simple*http-server".specialCamelCase()).toBe("SimpleHTTPSServer");
+    expect("*html5".specialCamelCase()).toBe("HTML5");
+    expect("*html5-rocks".specialCamelCase()).toBe("HTML5Rocks");
+  });
 })

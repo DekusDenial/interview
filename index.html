@@ -47,6 +47,9 @@
   .underline {
     text-decoration: underline;
   }
+  .black {
+    color: #000;
+  }
   sub {
     font-size: 20px;
     position: relative;
@@ -62,21 +65,22 @@
   <section class="slide"><div>
     <h2>Front End:</h2>
     <ol class="big">
-      <li class="next">What happen between the moment after you enter a URL in the address bar and the moment the page is finished rendering?</li>
-      <li class="next">How would you optimize a page that's full of images?</li>
-      <li class="next">What are some choices for client side storage?</li>
-      <li class="next">What are major differences between cookie and web storage?</li>
-      <li class="next">What are <b>Progress Enhancement</b> and <b>Graceful Degradation</b>?</li>
+      <li class="next">What happen <b>after</b> you enter an URL in the address bar and press enter, and <b>before</b> the page is rendered?</li>
+      <li class="next">How would you optimize a page that's <b>full of images, icons, and graphics</b>?</li>
+      <li class="next">What are some choices for <b>client side storage</b>?</li>
+      <li class="next">What are major <b>differences</b> between <b>cookie</b> and <b>web storage</b>?</li>
+      <li class="next">How do you achieve <b>faster page load time</b>? (anything applicable)</li>
     </ol>
   </div></section>
 	<section class="slide"><div>
     <h2>JavaScript:</h2>
 		<ol class="big">
+      <li class="next">Tell me what (anything) you know about <b>Function</b> in JavaScript.</li>
 			<li class="next">Explain <b>Prototype</b> in JavaScript. How does it work?</li>
 			<li class="next">Explain <b>Closure</b> in Javascript. What are some <span class="underline">Cons</span> about <b>Closure</b>?</li>
       <li class="next">Explain <b>Ajax</b>.</li>
       <li class="next">Explain <b>Garbage Collection</b> in JavaScript.</li>
-      <li class="next">What do you, as a Front End developer, care about <b>Memory Management</b> and <b>Performance Optimization</b>?</li>
+      <li class="next">What are the major concerns about <b>Memory Management</b> and <b>Performance Optimization</b>?</li>
 		</ol>
 	</div></section>
   <section class="slide"><div>
@@ -84,6 +88,9 @@
     <ol class="big">
       <li class="next">What are <b>Event Bubbling</b>, <b>Capturing</b> and <b>Delegation</b>?</li>
       <li class="next">What are <b>Reflow</b> and <b>Repaint</b> in a browser?</li>
+      <li class="next">What is <b>RAF</b>?
+        <ul class="big"><li class="next"><b>RequestAnimationFrame</b></li></ul>
+      </li>
       <li class="next">Let's say I'm on resolute.com, can I make a GET request to https://google.com via Ajax? e.g. <code class="javascript">xhr.open('GET', 'https://www.google.com');</code></li>
       <li class="next">How do you get around <b>Same-Origin Policy</b>?</li>
       <li class="next">Explain how <b>JSONP</b> works.</li>
@@ -102,12 +109,20 @@
 	<section class="slide"><div>
 		<h2>JavaScript:<br/><span class="small">!! You will need to switch over to Sublime Text to continue coding !!</span></h2>
 		<ol class="big">
-      <li class="next">*Implement <code class="javascript">Array.prototype.forEach</code>. The callback is invoked with <code class="javascript">(element, index, array)</code>.</li>
-      <li class="next">What is the main difference between <code class="javascript">Array.prototype.forEach</code> and regular <b>For-loop</b> over the array?</li>
-      <li class="next">*Special CamelCase. e.g.
-        <pre class="small" style="text-indent: 0;"><code class="javascript">"total-count".specialCamelCase(); // "totalCount"
-"list-item_count".specialCamelCase(); // "listItemCCount"
-"what_is-going-on_here".specialCamelCase(); // "whatIsGGoingOOOnHHHHere"</code></pre>
+      <!-- <li class="next">*Implement <code class="javascript">Array.prototype.forEach</code>. The callback is invoked with <code class="javascript">(element, index, array)</code>.</li> -->
+      <!-- <li class="next">What is the main difference between <code class="javascript">Array.prototype.forEach</code> and regular <b>For-loop</b> over the array?</li> -->
+      <li class="next">Special CamelCase. e.g.
+        <pre class="small" style="text-indent: 0;"><code class="javascript">"total-count".specialCamelCase(); // "total<b class="black">C</b>ount"
+"list-item_count".specialCamelCase(); // "list<b class="black">I</b>tem<b class="black">CC</b>ount"
+"what_is-going-on_here".specialCamelCase(); // "what<b class="black">I</b>s<b class="black">GG</b>oing<b class="black">OOO</b>n<b class="black">HHHH</b>ere"</code></pre>
+        <ul class="big">
+          <li class="next">Advanced Special CamelCase. e.g.
+            <pre class="small" style="text-indent: 0;"><code class="javascript">"_xml_http_request".specialCamelCase(); // "<b class="black">X</b>ml<b class="black">HH</b>ttp<b class="black">RRR</b>equest"
+"_simple*http-server".specialCamelCase(); // "<b class="black">S</b>imple<b class="black">HTTPSS</b>erver"
+"*html5".specialCamelCase(); // "<b class="black">HTML5</a>"
+"*html5-rocks".specialCamelCase(); // "<b class="black">HTML5R</b>ocks"</code></pre>
+          </li>
+        </ul>
       </li>
     </ol>
 	</div></section>
@@ -122,7 +137,7 @@
         </ul>
       </li>
       <li class="next">OR
-        <ul>
+        <ul class="big">
           <li class="next">Binary Search Tree with:</li>
           <li class="next"><code class="javascript">insert()</code>: insert a new node</li>
           <li class="next"><code class="javascript">traverse()</code>: return the path from the root node to the found node</li>
